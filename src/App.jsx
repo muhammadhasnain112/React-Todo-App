@@ -2,6 +2,7 @@ import { useState } from "react";
 import './index.css'
 import trash from './img/trash.png'
 import trash_can from './img/trash-can.png'
+
 function App() {
   const [value, updateValue] = useState('')
   const [arr, uparr] = useState([])
@@ -9,10 +10,14 @@ function App() {
     updateValue(e.target.value)
   }
   function show() {
+     if(value == ''){ 
+      return
+    }
     updateValue('')
     uparr([...arr, value])
   }
   function dlt(e) {
+   
     uparr(arr.filter((i) =>
       i !== e))
   }

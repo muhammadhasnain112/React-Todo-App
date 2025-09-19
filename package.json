@@ -1,6 +1,6 @@
 {
   "name": "first-react-app",
-  "homepage": "https://muhammadhasnain112.github.io/React-Todo-App/",
+  "homepage": "https://muhammadhasnain112.github.io/React-Todo-App",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,14 +9,15 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeloy":"npm run build",
-    "deploy":"gh-pages -d dist"
+    "predeloy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
     "gh-pages": "^6.3.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
